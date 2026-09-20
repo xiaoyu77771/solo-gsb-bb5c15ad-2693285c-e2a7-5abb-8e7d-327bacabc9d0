@@ -1,0 +1,12 @@
+{
+  "name": "stage-sandbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "舞台换景口令沙盘（React + TypeScript + Node.js）",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build && npm --prefix server run build",
+    "start": "npm --prefix server run start"
+  }
+}

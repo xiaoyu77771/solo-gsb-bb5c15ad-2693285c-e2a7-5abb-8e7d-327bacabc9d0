@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    container_name: stage-sandbox
+    ports:
+      - "8080:8080"
+    volumes:
+      # 数据持久化到本地命名卷（容器重建不丢失）
+      - sandbox-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  sandbox-data:
